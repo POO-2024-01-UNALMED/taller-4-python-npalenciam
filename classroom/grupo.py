@@ -20,8 +20,8 @@ class Grupo:
         if lista == None:
             lista = []
         lista.append(alumno)
-        self.listadoAlumnos = self.listadoAlumnos + lista
-
+        for alumno in lista:
+            self.listadoAlumnos.append (alumno)
     def __str__(self):
         return "Grupo de estudiantes: " + self._grupo
 
